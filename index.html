@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Team Meeting Minutes - April 9</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <!-- Title, Meeting type, Attendace -->
+      <h1>Example Meeting Minutes</h1>
+      <h2>Meeting Type: Practice Writing a Meeting Minutes</h2>
+      <h3>Date: April 9, 2026</h3>
+    </header>
+    <nav>
+      <a href="#attendance">Attendace</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#unfinished-business">Unfinished Business</a>
+      <a href="#new-business">New Business</a>
+      <a href="#questions-concerns">QA</a>
+      <a href="#diagrams/architecture">Diagrams/Architecture</a>
+    </nav>
+
+    <main>
+      <div>
+        <section id="attendace">
+          <h2>Attendace</h2>
+          <p>Names: Hien Tran</p>
+          <p><span>Number of people attend</span> the meeting:</p>
+        </section>
+      </div>
+
+      <hr />
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <details>
+          <summary>Click to view agenda items</summary>
+          <ol>
+            <li>
+              Build an HTML <b>Meeting Minute</b>, including the following
+            </li>
+            <ul>
+              <li>Document metadata</li>
+              <li>Content sectioning</li>
+              <li>Text content</li>
+              <li>Inline text semantics</li>
+              <li>Images and multimedia</li>
+              <li>Interactive Elements</li>
+              <li>Forms</li>
+            </ul>
+          </ol>
+        </details>
+      </section>
+
+      <section id="unfinished-business">
+        <h2>Unfinished Business from Last Meeting</h2>
+        <ul>
+          <li>None</li>
+        </ul>
+      </section>
+
+      <section id="new-business">
+        <h2>New Business</h2>
+        <ol>
+          <li>
+            Use all the <em>suggested</em> HTML elements for this Meeting
+            Minutes Example
+          </li>
+          <li>
+            Record a short video + an audio for the Images and multimedia
+            element
+          </li>
+          <li>Take an image for the Images and multimedia element</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="questions-concerns">
+        <h2>Miscellaneous comments/Questions/Concerns</h2>
+        <ul>
+          <li>What is the best way to prepare for an upcoming interview?</li>
+          <ul>
+            <li>
+              To prepare for an interview, you should be ready to confidently
+              talk about everything on your resume, along with common behavioral
+              questions. This includes introducing yourself, explaining your
+              projects, and discussing your strengths and weaknesses. You should
+              also <strong>research the company</strong>, understand its
+              culture, what it works on, and what it is looking for in
+              candidates.
+            </li>
+          </ul>
+          <li>What is JVM?</li>
+          <ul>
+            <li>
+              When a programmer run the Java programs. It takes the source code
+              and uses a complier called javac to compile it into bytecode.The
+              JVm then reads and executes that bytecode as an output. The key
+              idea for a JVM is to
+              <i>write once and can be run anywhere</i> because the bytecode
+              isn't tied to any specific hardware.
+            </li>
+          </ul>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="diagrams/architecture">
+        <h2>Diagrams/Architecture</h2>
+        <img src="img.jpg" alt="myfriend'sdog" width="500" />
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Audio Recording</h2>
+        <audio controls>
+          <source src="AudioTest.m4a" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <section>
+        <h2>Video Recording</h2>
+        <video controls width="500">
+          <source src="videoTest.mov" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </section>
+    </main>
+
+    <hr />
+
+    <form>
+      <fieldset>
+        <legend>Meeting Feedback</legend>
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="meeting-date">Meeting Date</label><br />
+        <input type="date" id="meeting-date" name="meeting-date" /><br />
+
+        <label>How useful was this meeting:</label><br />
+        <input type="radio" id="very" name="rating" value="very" />
+        <label for="very">Very useful</label><br />
+        <input type="radio" id="somewhat" name="rating" value="somewhat" />
+        <label for="somewhat">Somewhat useful</label><br />
+        <input type="radio" id="not" name="rating" value="not" />
+        <label for="not">Not useful</label><br /><br />
+
+        <label>What did you learn from Lab2?</label><br />
+        <input
+          type="checkbox"
+          id="Document-metadata"
+          name="topics"
+          value="Document-metadata"
+        />
+        <label for="Document-metadata">Use document metadata</label><br />
+
+        <input
+          type="checkbox"
+          id="Content-sectioning"
+          name="topics"
+          value="Content-sectioning"
+        />
+        <label for="Content-sectioning">Use content sectioning</label><br />
+
+        <input
+          type="checkbox"
+          id="text-content"
+          name="topics"
+          value="text-content"
+        />
+        <label for="text-content">Use text content</label><br />
+
+        <input
+          type="checkbox"
+          id="Inline-text"
+          name="topics"
+          value="Inline-text"
+        />
+        <label for="Inline-text">Use inline text semantics</label><br />
+
+        <input
+          type="checkbox"
+          id="imageNMultimedia"
+          name="topics"
+          value="imageNMultimedia"
+        />
+        <label for="imageNMultimedia">Use images and multimedia</label><br />
+
+        <input
+          type="checkbox"
+          id="interactive-element"
+          name="topics"
+          value="interactive-element"
+        />
+        <label for="interactive-element">Use interactive elements</label><br />
+
+        <input type="checkbox" id="forms" name="topics" value="forms" />
+        <label for="forms">Use forms</label><br /><br />
+
+        <label for="tool">Preferred Meeting Tool:</label><br />
+        <input type="text" id="tool" name="tool" list="tools" />
+        <datalist id="tools">
+          <option value="Zoom"></option>
+          <option value="Google Meet"></option>
+          <option value="In person"></option>
+          <option value="Discord"></option>
+        </datalist>
+        <br /><br />
+
+        <label for="snackpreferred"
+          >Snack that you Preferred to have During Meeting:</label
+        ><br />
+        <select id="snackpreferred" name="snackpreferred">
+          <option value="Doritos">Doritos</option>
+          <option value="Oreos">Oreos</option>
+          <option value="Pringles">Pringles</option>
+          <option value="Popcorn">Popcorn</option></select
+        ><br /><br />
+
+        <label for="comments">Additional comments:</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea
+        ><br /><br />
+        <button type="submit">Submit Feedback</button>
+      </fieldset>
+    </form>
+
+    <footer>
+      <p>Meeting Minutes recorded by ...</p>
+      <!-- your form could go here -->
+    </footer>
+  </body>
+</html>

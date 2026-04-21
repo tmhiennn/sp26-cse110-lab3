@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+ 
+/* ---- CSS Variables & Fallbacks is a reusable values that you only need to design once and use anywhere in the stylesheet ---- */
+:root {
+  --main-color: #5a0000;
+  --font-size-large: 25px;
+  --nav-bg: #e8dada;
+  --section-bg: rgb(248, 219, 223);
+  --border-color: #ccc;
+}
+ 
+/* ---- Universal Selector ---- */
+* {
+  box-sizing: border-box;
+}
+ 
+/* ---- Element Selector + Google Font ---- */
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+/* ---- Headings ---- */
+ 
+/* RGB color + margin longhand (margin-top, margin-bottom, margin-left, margin-right) + unit px + text align */
+h1 {
+  color: var(--main-color, orange);   /* CSS backfall, only used if --main-color is missing or broken */
+  margin-top: 10px;
+   margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px; 
+  text-align: center;       /* Make text center */
+}
+ 
+/* RGBA color + margin shorthand (margin: <top> <right> <bottom> <left>) */
+h2 {
+  color: rgba(143, 8, 8, 0.9);
+  margin: 10px 20px 10px 20px;
+}
+ 
+/* Hex code */
+h3 {
+  color: #000000;
+  text-align: center;
+}
+ 
+/* ---- Text Content ---- */
+ 
+/* HSL color + unit pt */
+p {
+  color: hsl(0, 6%, 20%);
+  font-size: 12pt;
+}
+ 
+/* HSLA color */
+span {
+  color: hsla(226, 100%, 23%, 0.7);
+}
+ 
+/* Color name */
+a {
+  color: navy;
+  text-decoration: underline; /* force underline */
+}
+ 
+/* Wider-gamut color using color() */
+/* .special {
+  color: color(display-p3 1 0.5 0);
+} */
+ 
+/* color-mix - blend two colors together */
+/* .mixed {
+  color: color-mix(in srgb, red 50%, blue 50%);
+} */
+ 
+/* ---- Background + Padding Shorthand (<top> <right> <bottom> <left>) ---- */
+section {
+  background-color: var(--section-bg, #fce4ec);
+  padding: 15px 20px 15px 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+ 
+/* ---- Nav - Flexbox Layout (3+ flexbox properties, 3+ children) ---- */
+nav {
+  display: flex;
+  flex-direction: row;        /* default: left to right */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;            /* items drop to next line if no space */
+  background-color: var(--nav-bg, #eee);
+  padding: 0.75rem;
+  position: sticky;
+  top: 0;                   /* work together with position sticky to make the nav stay locked on the screen when reaches top = 0 */
+  /* z-index: 100; */
+}
+ 
+/* Pseudo-classes: hover and active on nav links */
+nav a:hover {
+  color: red;
+  text-decoration: none;
+}
+ 
+nav a:active {
+  color: darkred;
+}
+ 
+/* ---- Main Content ---- */
+main {
+  width: 80%;
+  max-width: 900px;
+  min-width: 300px;
+  margin: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+ 
+/* ---- Header ---- */
+header {
+  background-color: hsl(0, 50%, 95%);
+  padding: 1.5em 20px 1.5em 20px;
+  text-align: center;
+  border-bottom: 3px solid var(--main-color, #5a0000);
+}
+ 
+/* ---- Borders around HTML elements ---- */
+details {
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  border-radius: 6px;
+  padding: 10px; 
+}
+ 
+/* ---- Border Shorthand ---- */
+fieldset {
+  border: 2px solid #5a0000;
+  border-radius: 10px;        /* Rounds the corners of the element */
+  padding: 20px;
+}
+ 
+/* ---- Padding Longhand (padding-top, padding-bottom, padding-left, padding-right)---- */
+legend {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--main-color, orange);
+}
+ 
+/* ---- Form Styling ---- */
+form {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;           /* Set the box center horizontally *ONLY works when the element has a defined width * */
+  padding: 1rem;
+}
+ 
+/* ---- Sizing: height, width ---- */
+textarea {
+  width: 100%;
+  height: 3cm;
+}
+  
+/* ---- Display: inline-block and block ---- */
+input[type="text"],
+input[type="date"] {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 15rem;
+}
+ 
+label {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+ 
+/* ---- Button Styling ---- */
+button {
+  background-color: #5a0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+ 
+button:hover {
+  background-color: #8b0000;
+}
+ 
+button:active {
+  background-color: #3a0000;
+}
+
+/* ---- Horizontal Rule ---- */
+hr {
+  border-top: 1px solid #ddd;
+  margin: 1.5rem auto;
+  width: 100%;
+}
+ 
+/* ---- Images ---- */
+img {
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+ 
+/* ---- Footer ---- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  color: hsl(0, 0%, 40%);
+  font-size: 0.9em;
+  position: relative;
+}
+ 
+/* ---- Grid Layout for Attendance ---- */
+/* Wrap the attendance items (students) in a div with class="stats-grid" */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  grid-template-rows: auto;
+}
+ 
+.stats-grid > div {
+  background-color: rgba(90, 0, 0, 0.05);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+ 
+/* ---- Text decoration ---- */
+/* .underline-text {
+  text-decoration: underline;
+} */
+ 
+/* ---- Display: none ---- */
+/* .hidden {
+  display: none;
+} */
+ 
+/* ---- Position: relative example ---- */
+/* sticky is already used on nav above */
+/* .relative-box {
+  position: relative;
+  top: 5px;
+} */
+ 
+/* ---- Attribute Selector ---- */
+[type="radio"] {
+  margin-right: 4px;
+}
+ 
+/* ---- Selector List (element, element) ---- */
+audio, video {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+ 
+/* ---- Descendant Combinator (element element) ---- */
+section ul {
+  padding-left: 20px;
+}
+ 
+/* ---- Child Combinator (element > element) ---- */
+main > section {
+  margin-bottom: 1rem;
+}
+ 
+/* ---- General Sibling Combinator (element ~ element) ---- */
+h2 ~ p {
+  margin-left: 10px;
+}
+ 
+/* ---- Adjacent Sibling Combinator (element + element) ---- */
+h2 + p {
+  font-weight: 600;
+}
+ 
+/* ---- Combining Two Selectors (element.class) ---- */
+div.stats-grid {
+  margin-top: 10px;
+}
+ 
+/* ---- :has() Selector ---- */
+section:has(details) {
+  border-left: 4px solid #5a0000;
+}
+ 
+/* ---- Nested Selectors ---- */
+nav {
+  a {
+    /* font-size: 0.9rem; */
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+}
+ 
+/* ---- ID Selector ---- */
+#agenda {
+  background-color: rgba(255, 240, 242, 0.7);
+}
+ 
+/* ---- Class Selector ---- */
+.highlight {
+  background-color: yellow;
+}
+ 
+/* ---- Responsive Media Queries ---- */
+ 
+/* Tablet */
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+ 
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+ 
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+/* Phone */
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+  h1 {
+    font-size: 1.2rem;
+  }
+ 
+  nav a {
+    font-size: 0.8rem;
+  }
+ 
+  textarea {
+    height: 80px;
+  }
+}

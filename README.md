@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 -
 
-https://tmhiennn.github.io/Lab2_Starter
+https://tmhiennn.github.io/sp26-cse110-lab3/

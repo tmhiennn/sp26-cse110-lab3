@@ -64,17 +64,7 @@ a {
   color: navy;
   text-decoration: underline; /* force underline */
 }
- 
-/* Wider-gamut color using color() */
-/* .special {
-  color: color(display-p3 1 0.5 0);
-} */
- 
-/* color-mix - blend two colors together */
-/* .mixed {
-  color: color-mix(in srgb, red 50%, blue 50%);
-} */
- 
+
 /* ---- Background + Padding Shorthand (<top> <right> <bottom> <left>) ---- */
 section {
   background-color: var(--section-bg, #fce4ec);
@@ -245,21 +235,21 @@ footer {
 }
  
 /* ---- Text decoration ---- */
-/* .underline-text {
+.underline-text {
   text-decoration: underline;
-} */
+}
  
 /* ---- Display: none ---- */
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
  
 /* ---- Position: relative example ---- */
 /* sticky is already used on nav above */
-/* .relative-box {
+.relative-box {
   position: relative;
   top: 5px;
-} */
+}
  
 /* ---- Attribute Selector ---- */
 [type="radio"] {
@@ -304,12 +294,9 @@ section:has(details) {
 }
  
 /* ---- Nested Selectors ---- */
-nav {
-  a {
-    /* font-size: 0.9rem; */
+nav a {
     padding: 4px 8px;
     border-radius: 4px;
-  }
 }
  
 /* ---- ID Selector ---- */
